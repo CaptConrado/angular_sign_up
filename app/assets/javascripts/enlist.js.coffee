@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+app = angular.module("Recruiter", ["ngResource"])
+
+@EnlistCtrl = ($scope, $resource) ->
+	Recruit = $resource("/recruits/:id", {id: '@id'}, {update: {method: "PUT"}})
+	$scope.recruits = Recruit.query()
+
+	$scope.addRecruit = ->
+		recruit = Recruit.save($scope.newRecruit)
+		$scope.recruits.push(recruit)
+		$scope.newRecruit = {}
+
