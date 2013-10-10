@@ -1,6 +1,10 @@
 /*************************** STARS ****************************/
 #stars {
-	background: #425169 url('../img/stars.gif') top center;
+	/*background: #425169 url('../img/stars.gif') top center;*/
+	/*background: #425169 url('../img/stars.gif') top center;*/
+	/*background: #425169 url('../img/stars.gif') top center;*/
+	background: #425169 url('http://www.tusignificadodelossuenos.com/wp-content/uploads/2013/04/Estrellas.jpg') top center;
+	/*background: #425169 url('http://static.tumblr.com/e00703ffa1c4316d704aa4067d3e4fa2/kdhxykv/jtbmibgt2/tumblr_static_night-sky-starry-space.jpg') top center;*/
 	width: 100%;
 	height: 8000px;
 	position: fixed;
