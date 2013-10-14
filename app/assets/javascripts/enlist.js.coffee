@@ -8,4 +8,3 @@ app = angular.module("Recruiter", ["ngResource"])
 		recruit = Recruit.save($scope.newRecruit)
 		$scope.recruits.push(recruit)
 		$scope.newRecruit = {}
-
